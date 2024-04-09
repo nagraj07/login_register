@@ -1,0 +1,33 @@
+import React, { useState } from 'react'
+
+const App = () => {
+
+const [FormData, setFormData] =useState({UserName:""});
+const[Error, setError]= useState("");
+
+  const handelSubmit=(e)=>{
+    e.preventDefault();
+if(!FormData.UserName.trim())
+{ setError("User Field is Empty")}
+else{  setError("")}  
+}
+
+  const HandelChange=(e)=>{
+    const {name, value} = e.target;
+    setFormData({ ...FormData,  [name]:value  })
+    setError("");
+  }
+  return (
+<>
+<p>{Error? Error: ""}</p>
+
+ <form  onSubmit={handelSubmit}>
+  <input type='text' name='UserName' placeholder='UserName' onChange={HandelChange} />
+  <button type='submit'>Submit</button>
+ </form>
+ 
+ </>
+  )
+}
+
+export default App

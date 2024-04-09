@@ -1,0 +1,29 @@
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 232, 249);
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+    align: center;
+}
+.input{
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+}
+.button{
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: brown;
+    cursor: pointer;
+}
+table,tr,td,th{
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: rgb(165, 173, 186);
+    margin: 10px;
+}
