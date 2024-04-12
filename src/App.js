@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./register.css"
 
 const App = () => {
 
@@ -25,11 +26,13 @@ const App = () => {
       };
     
       const handleLoginChange = (e) => {
+        e.preventDefault();
         const { name, value } = e.target;
         setLogin({ ...Login, [name]: value });
       };
     
       const handleRegisterChange = (e) => {
+        e.preventDefault();
         const { name, value } = e.target;
         setRegister({ ...Register, [name]: value });
       };
@@ -37,14 +40,14 @@ const App = () => {
     return(
         <>
             <h1>LOGIN FORM</h1>
-                <form onSubmit={handleLogin}>
+                <form onSubmit={handleLogin} className="form1">
                     <input type="text" name="username" placeholder="Username" onChange={handleLoginChange}/>
                     <input type="password" name="password" placeholder="Password" onChange={handleLoginChange}/>
                     <button type="submit">Submit</button>
                 </form>
 
             <h1>REGISTER FORM</h1>
-                <form onSubmit={handleRegister}>
+                <form onSubmit={handleRegister} className="form2">
                     <input type="text" name="name" placeholder="FirstName" onChange={handleRegisterChange}/>
                     <input type="text" name="lastname" placeholder="LastName" onChange={handleRegisterChange}/>
                     <input type="text" name="username" placeholder="UserName" onChange={handleRegisterChange}/>
