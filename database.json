@@ -1,16 +1,48 @@
 {
-    "user" : [
-        {
-            "username" : "hnagraj",
-            "password" : "Nagraj@123"
-        }
-    ],
-    "registration" : [
-        {
-            "name" : "Nagraj",
-            "lastname" : "Hajagulkar",
-            "usename" : "hnagraj",
-            "password" : "Nagraj@123"
-        }
-    ]
+  "registration": [
+    {
+      "firstname": "Nagraj",
+      "lastname": "Hajagulkar",
+      "username": "nagraj__07_",
+      "password": "12",
+      "id": "e401"
+    },
+    {
+      "id": "ecc2",
+      "firstname": "one",
+      "lastname": "two",
+      "username": "aaa",
+      "password": "bbbb"
+    },
+    {
+      "id": "66f7",
+      "firstname": "nagraj",
+      "lastname": "h",
+      "username": "nagrajh95",
+      "password": "nagraj@2411"
+    },
+    {
+      "firstname": "bhaiyya",
+      "lastname": "Hajagulkar",
+      "username": "nagraj__07_",
+      "password": "0000",
+      "id": "861d"
+    }
+  ],
+  "user": [
+    {
+      "username": "hnagraj",
+      "password": "Nagraj@123",
+      "id": "8e5f"
+    },
+    {
+      "id": "6f17"
+    },
+    {
+      "id": "019c"
+    },
+    {
+      "id": "3a70"
+    }
+  ]
 }
